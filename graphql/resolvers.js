@@ -1,17 +1,17 @@
-const pool = require('../middleware/pg')
+const pool = require('../connection/pg')
 
 const resolvers = {
     Query: {
+        getAllUsers: async () => {
+            const res = await pool.query('SELECT uuid, first_name, last_name, email, ip_address FROM public.users;')
+            return res.rows
+        },
         getUser: async (parent, { uuid }, context, info) => {
             const res = await pool.query(
                 'SELECT uuid, first_name, last_name, email, ip_address FROM public.users WHERE uuid = $1;',
                 [uuid]
             )
             return res.rows[0]
-        },
-        getAllUsers: async () => {
-            const res = await pool.query('SELECT uuid, first_name, last_name, email, ip_address FROM public.users;')
-            return res.rows
         },
     },
     Mutation: {
