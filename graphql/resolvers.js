@@ -3,25 +3,37 @@ const pool = require('../connection/pg')
 const resolvers = {
     Query: {
         getAllUsers: async () => {
-            const res = await pool.query('SELECT uuid, first_name, last_name, email, ip_address FROM public.users;')
-            return res.rows
+            try {
+                const { rows } = await pool.query('SELECT uuid, first_name, last_name, email, ip_address FROM public.users;')
+                return rows
+            } catch (err) {
+                console.log('Something went wrong: ' + err)
+            }
         },
         getUser: async (parent, { uuid }, context, info) => {
-            const res = await pool.query(
-                'SELECT uuid, first_name, last_name, email, ip_address FROM public.users WHERE uuid = $1;',
-                [uuid]
-            )
-            return res.rows[0]
+            try {
+                const { rows } = await pool.query(
+                    'SELECT uuid, first_name, last_name, email, ip_address FROM public.users WHERE uuid = $1;',
+                    [uuid]
+                )
+                return rows[0]
+            } catch (err) {
+                console.log('Something went wrong: ' + err)
+            }
         },
     },
     Mutation: {
         createUser: async (parent, { user }, context, info) => {
             const { firstName, lastName, email, ipAddress } = user
-            const res = await pool.query(
-                'INSERT INTO public.users (first_name, last_name, email, ip_address) VALUES ($1, $2, $3, $4) RETURNING *;',
-                [firstName, lastName, email, ipAddress]
-            )
-            return res.rows[0]
+            try {
+                const { rows } = await pool.query(
+                    'INSERT INTO public.users (first_name, last_name, email, ip_address) VALUES ($1, $2, $3, $4) RETURNING *;',
+                    [firstName, lastName, email, ipAddress]
+                )
+                return rows[0]
+            } catch (err) {
+                console.log('Something went wrong: ' + err)
+            }
         },
         updateUser: async (parent, { uuid, user }, context, info) => {
             const tempArr = []
@@ -43,15 +55,23 @@ const resolvers = {
                         return
                 }
             }
-            const res = await pool.query(
-                `UPDATE public.users SET ${tempArr.join(', ')} WHERE uuid = $${tempArr.length + 1} RETURNING *;`,
-                [...Object.values(user), uuid]
-            )
-            return res.rows[0]
+            try {
+                const { rows } = await pool.query(
+                    `UPDATE public.users SET ${tempArr.join(', ')} WHERE uuid = $${tempArr.length + 1} RETURNING *;`,
+                    [...Object.values(user), uuid]
+                )
+                return rows[0]
+            } catch (err) {
+                console.log('Something went wrong: ' + err)
+            }
         },
         deleteUser: async (parent, { uuid }, context, info) => {
-            const res = await pool.query('DELETE FROM public.users WHERE uuid = $1 RETURNING *;', [uuid])
-            return res.rows[0]
+            try {
+                const { rows } = await pool.query('DELETE FROM public.users WHERE uuid = $1 RETURNING *;', [uuid])
+                return rows[0]
+            } catch (err) {
+                console.log('Something went wrong: ' + err)
+            }
         },
     },
 }
