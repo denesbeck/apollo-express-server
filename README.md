@@ -53,7 +53,7 @@ Starts the server with nodemon.
 
 ## Usage <a name = "usage"></a>
 
-Explore the graph using [Apollo Studio](http://localhost:4000/graphql).
+Explore the graphs using [Apollo Studio](http://localhost:4000/graphql).
 
 ## Built Using <a name = "built_using"></a>
 
