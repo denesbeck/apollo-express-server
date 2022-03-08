@@ -13,12 +13,6 @@ This is an example GraphQL server app using [Apollo Server Express](https://www.
 
 ## Getting Started <a name = "getting_started"></a>
 
-After [generating an SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and adding it to your GitHub account, clone the application:
-
-```
-git clone git@github.ibm.com:coda/query-api.git
-```
-
 ### Prerequisites
 
 Install [Node.js](https://nodejs.org/en/).
