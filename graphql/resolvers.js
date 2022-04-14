@@ -10,7 +10,7 @@ const resolvers = {
                 console.log('Something went wrong: ' + err)
             }
         },
-        getUser: async (parent, { uuid }, context, info) => {
+        getUser: async (_parent, { uuid }, _context, _info) => {
             try {
                 const { rows } = await pool.query(
                     'SELECT uuid, first_name, last_name, email, ip_address FROM public.users WHERE uuid = $1;',
@@ -23,7 +23,7 @@ const resolvers = {
         },
     },
     Mutation: {
-        createUser: async (parent, { user }, context, info) => {
+        createUser: async (_parent, { user }, _context, _info) => {
             const { firstName, lastName, email, ipAddress } = user
             try {
                 const { rows } = await pool.query(
@@ -35,7 +35,7 @@ const resolvers = {
                 console.log('Something went wrong: ' + err)
             }
         },
-        updateUser: async (parent, { uuid, user }, context, info) => {
+        updateUser: async (_parent, { uuid, user }, _context, _info) => {
             const tempArr = []
             for (const prop in user) {
                 switch (prop) {
@@ -65,7 +65,7 @@ const resolvers = {
                 console.log('Something went wrong: ' + err)
             }
         },
-        deleteUser: async (parent, { uuid }, context, info) => {
+        deleteUser: async (_parent, { uuid }, _context, _info) => {
             try {
                 const { rows } = await pool.query('DELETE FROM public.users WHERE uuid = $1 RETURNING *;', [uuid])
                 return rows[0]
