@@ -1,7 +1,11 @@
 const pool = require('../connection/pg')
+const randomUserData = require('../data/randomUsers.json')
 
 const resolvers = {
     Query: {
+        get15RandomUsers: () => {
+            return randomUserData.users
+        },
         getAllUsers: async () => {
             try {
                 const { rows } = await pool.query('SELECT uuid, first_name, last_name, email, ip_address FROM public.users;')

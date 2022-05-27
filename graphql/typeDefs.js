@@ -2,6 +2,7 @@ const { gql } = require('apollo-server-express')
 
 const typeDefs = gql`
     type Query {
+        get15RandomUsers: [RandomUser]
         getAllUsers: [User]
         getUser(uuid: ID!): User
     }
@@ -25,6 +26,35 @@ const typeDefs = gql`
         lastName: String
         email: String
         ipAddress: String
+    }
+
+    type RandomUser {
+        gender: String
+        name: Name
+        location: Location
+        email: String
+        phone: String
+        picture: Picture
+    }
+
+    type Name {
+        title: String
+        first: String
+        last: String
+    }
+    type Location {
+        street: Street
+        city: String
+        state: String
+        country: String
+        postcode: Int
+    }
+    type Street {
+        number: Int
+        name: String
+    }
+    type Picture {
+        medium: String
     }
 `
 

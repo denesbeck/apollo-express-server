@@ -1,0 +1,245 @@
+{
+    "users": [
+        {
+            "gender": "female",
+            "name": { "title": "Miss", "first": "Sedef", "last": "Biçer" },
+            "location": {
+                "street": { "number": 6564, "name": "Anafartalar Cd" },
+                "city": "Manisa",
+                "state": "Amasya",
+                "country": "Turkey",
+                "postcode": 98340
+            },
+            "email": "sedef.bicer@example.com",
+            "phone": "(022)-741-2779",
+
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/women/87.jpg"
+            }
+        },
+        {
+            "gender": "male",
+            "name": { "title": "Mr", "first": "Lutero", "last": "Novaes" },
+            "location": {
+                "street": { "number": 9696, "name": "Rua Alagoas " },
+                "city": "Codó",
+                "state": "Alagoas",
+                "country": "Brazil",
+                "postcode": 13277
+            },
+            "email": "lutero.novaes@example.com",
+            "phone": "(41) 7894-1416",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/men/24.jpg"
+            }
+        },
+        {
+            "gender": "female",
+            "name": { "title": "Mrs", "first": "Christa-Maria", "last": "Eilers" },
+            "location": {
+                "street": { "number": 9922, "name": "Waldweg" },
+                "city": "Schönwald",
+                "state": "Berlin",
+                "country": "Germany",
+                "postcode": 14226
+            },
+            "email": "christa-maria.eilers@example.com",
+            "phone": "0324-6623151",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/women/89.jpg"
+            }
+        },
+        {
+            "gender": "female",
+            "name": { "title": "Miss", "first": "Lois", "last": "Morgan" },
+            "location": {
+                "street": { "number": 2950, "name": "Locust Rd" },
+                "city": "Augusta",
+                "state": "Alabama",
+                "country": "United States",
+                "postcode": 12997
+            },
+            "email": "lois.morgan@example.com",
+            "phone": "(437)-861-8681",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/women/46.jpg"
+            }
+        },
+        {
+            "gender": "male",
+            "name": { "title": "Mr", "first": "Perry", "last": "Scott" },
+            "location": {
+                "street": { "number": 7569, "name": "Galway Road" },
+                "city": "Limerick",
+                "state": "Wicklow",
+                "country": "Ireland",
+                "postcode": 70931
+            },
+            "email": "perry.scott@example.com",
+            "phone": "011-375-5203",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/men/93.jpg"
+            }
+        },
+        {
+            "gender": "male",
+            "name": { "title": "Mr", "first": "Adam", "last": "Rey" },
+            "location": {
+                "street": { "number": 6744, "name": "Rue des Écoles" },
+                "city": "Roubaix",
+                "state": "Ain",
+                "country": "France",
+                "postcode": 56900
+            },
+            "email": "adam.rey@example.com",
+            "phone": "04-11-11-96-32",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/men/38.jpg"
+            }
+        },
+        {
+            "gender": "male",
+            "name": { "title": "Mr", "first": "Virgil", "last": "Bergman" },
+            "location": {
+                "street": { "number": 7854, "name": "Gruttolaan" },
+                "city": "Hoorn Terschelling",
+                "state": "Friesland",
+                "country": "Netherlands",
+                "postcode": 19148
+            },
+            "email": "virgil.bergman@example.com",
+            "phone": "(013)-407-8421",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/men/16.jpg"
+            }
+        },
+        {
+            "gender": "female",
+            "name": { "title": "Mrs", "first": "Natalie", "last": "Foster" },
+            "location": {
+                "street": { "number": 8933, "name": "Central St" },
+                "city": "Busselton",
+                "state": "Northern Territory",
+                "country": "Australia",
+                "postcode": 8521
+            },
+            "email": "natalie.foster@example.com",
+            "phone": "05-9805-5518",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/women/23.jpg"
+            }
+        },
+        {
+            "gender": "female",
+            "name": { "title": "Ms", "first": "Lucy", "last": "Franklin" },
+            "location": {
+                "street": { "number": 9071, "name": "N Stelling Rd" },
+                "city": "Launceston",
+                "state": "Queensland",
+                "country": "Australia",
+                "postcode": 4121
+            },
+            "email": "lucy.franklin@example.com",
+            "phone": "07-9535-8998",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/women/5.jpg"
+            }
+        },
+        {
+            "gender": "female",
+            "name": { "title": "Ms", "first": "Emily", "last": "Ambrose" },
+            "location": {
+                "street": { "number": 4269, "name": "36th Ave" },
+                "city": "Chatham",
+                "state": "Saskatchewan",
+                "country": "Canada",
+                "postcode": 672511
+            },
+            "email": "emily.ambrose@example.com",
+            "phone": "427-693-9574",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/women/92.jpg"
+            }
+        },
+        {
+            "gender": "female",
+            "name": { "title": "Ms", "first": "Sofia", "last": "Poulsen" },
+            "location": {
+                "street": { "number": 6681, "name": "Slotsvej" },
+                "city": "Fredeikssund",
+                "state": "Midtjylland",
+                "country": "Denmark",
+                "postcode": 19298
+            },
+            "email": "sofia.poulsen@example.com",
+            "phone": "34842761",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/women/87.jpg"
+            }
+        },
+        {
+            "gender": "female",
+            "name": { "title": "Mrs", "first": "Jocemara", "last": "Alves" },
+            "location": {
+                "street": { "number": 7918, "name": "Rua Dezessete " },
+                "city": "Crato",
+                "state": "Alagoas",
+                "country": "Brazil",
+                "postcode": 74223
+            },
+            "email": "jocemara.alves@example.com",
+            "phone": "(42) 9188-2680",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/women/69.jpg"
+            }
+        },
+        {
+            "gender": "male",
+            "name": { "title": "Mr", "first": "Ethem", "last": "Elskamp" },
+            "location": {
+                "street": { "number": 7951, "name": "Duvensteijn" },
+                "city": "Winterswijk Meddo",
+                "state": "Flevoland",
+                "country": "Netherlands",
+                "postcode": 92684
+            },
+            "email": "ethem.elskamp@example.com",
+            "phone": "(315)-493-6975",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/men/62.jpg"
+            }
+        },
+        {
+            "gender": "female",
+            "name": { "title": "Ms", "first": "Simge", "last": "Steverink" },
+            "location": {
+                "street": { "number": 5949, "name": "Habetshof" },
+                "city": "Hengelo",
+                "state": "Groningen",
+                "country": "Netherlands",
+                "postcode": 69004
+            },
+            "email": "simge.steverink@example.com",
+            "phone": "(628)-639-6689",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/women/54.jpg"
+            }
+        },
+        {
+            "gender": "male",
+            "name": { "title": "Monsieur", "first": "Clément", "last": "Gaillard" },
+            "location": {
+                "street": { "number": 3100, "name": "Place de L'Abbé-Georges-Hénocque" },
+                "city": "Hauteville",
+                "state": "Fribourg",
+                "country": "Switzerland",
+                "postcode": 9017
+            },
+            "email": "clement.gaillard@example.com",
+            "phone": "077 437 73 71",
+            "picture": {
+                "medium": "https://randomuser.me/api/portraits/med/men/78.jpg"
+            }
+        }
+    ]
+}
