@@ -1,0 +1,6 @@
+.github
+node_modules
+.gitignore
+.prettierrc
+.whitesource
+README.md

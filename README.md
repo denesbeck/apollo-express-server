@@ -43,7 +43,15 @@ npm install
 npm start
 ```
 
-Starts the server with nodemon.
+Starts the server.
+
+### Running with Docker Compose
+
+```
+docker-compose up -d
+```
+
+Execute the above command in the root folder of this project. This will launch the GraphQL server with a PostgreSQL database ([incl. sample data](/data/randomUsers.json)) and a pgAdmin service. [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) installation is a prerequisite. Get the PostgreSQL and pgAdmin credentials from [docker-compose.yml](docker-compose.yml) file.
 
 ## Usage <a name = "usage"></a>
 
