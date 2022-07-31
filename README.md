@@ -1,4 +1,4 @@
-# Apollo GraphQL Server
+# Apollo Express Server
 
 ## Table of Contents
 
