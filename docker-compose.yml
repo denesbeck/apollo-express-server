@@ -20,7 +20,7 @@ services:
             - POSTGRES_PASSWORD=SuperSecret!
         volumes:
             - ./pg_data:/var/lib/postgresql/data
-            - ./sql/:/docker-entrypoint-initdb.d
+            - ./sql:/docker-entrypoint-initdb.d
     pgadmin:
         image: dpage/pgadmin4
         ports:
